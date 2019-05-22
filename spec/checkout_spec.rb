@@ -24,6 +24,10 @@ let(:checkout) { Checkout.new }
     expect(checkout.total).to eq(3.5)
   end
 
-
-
+  it 'can display total as pounds and pence' do
+    checkout.scan(:cereal)
+    checkout.scan(:potatoes)
+    expect(checkout.total_in_quid).to eq('£3.50')
+  end
+# '%.2f' % 500 --> "500.00"
 end

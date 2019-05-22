@@ -19,4 +19,9 @@ class Checkout
     item_list.sum
   end
 
+  def total_in_quid
+    amount = '%.2f' % total  # '%.2f' % 500 --> "500.00"
+    "£" + amount
+  end
+
 end
