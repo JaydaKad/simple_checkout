@@ -1,6 +1,6 @@
-# simple_checkout
+# Simple Checkout
 
-##Action Plan##
+## Action Plan ##
 Write the code for a supermarket checkout that can calculate the price of a number of items. Each item should be priced individually, and the checkout should be able to scan them in any order.
 
 The requirements for the system are as follows:
